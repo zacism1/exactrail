@@ -51,5 +51,18 @@
         <p>&copy; 2024 Exact Rail Services Pty Ltd. All rights reserved.</p>
     </footer>
 
+    <!-- Smooth Scrolling Script -->
+    <script>
+        // Smooth scrolling effect for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
