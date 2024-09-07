@@ -1,3 +1,4 @@
+
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
@@ -28,6 +29,24 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo-image {
+    width: 50px; /* Adjust the size of the logo if necessary */
+    height: auto;
+    margin-right: 15px; /* Adds spacing between logo and text */
+    border-radius: 8px; /* Optional: rounds the corners of the logo */
+}
+
 
 body {
 	line-height: 1;
