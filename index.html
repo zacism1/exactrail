@@ -1,169 +1,192 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Exact Rail Services</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Exact Rail Services</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .side-by-side-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Add space between images */
+            margin-top: 20px;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+        .side-by-side-images img {
+            width: 50%; /* Set the images to take up 50% of the container width */
+            height: auto;
+            border-radius: 8px;
+            max-width: 500px; /* Set a max width to limit large screens */
+        }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>EXACT RAIL<br />
-						SERVICES</h1>
-						<p>Providing superior Hi-Rail operators, rail-related apps, web development, and machinery hire services.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+        @media screen and (max-width: 768px) {
+            .side-by-side-images {
+                flex-direction: column; /* Stack images vertically on smaller screens */
+                align-items: center;
+            }
 
-				<header id="header">
-					<a href="index.html" class="logo">
-						<img src="LOGO.jpg" alt="Exact Rail Services Logo" class="logo-image" />
-						Exact Rail Services
-					</a>
-				</header>
+            .side-by-side-images img {
+                width: 80%; /* Adjust the size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body class="is-preload">
 
-				<!-- Nav -->
-					<nav id="nav">
-    <ul class="links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ourservices.html">Our Services</a></li> <!-- Updated link -->
-        <li><a href="railapp.html">RailApp</a></li>
-    </ul>
-    <ul class="icons">
-        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-        <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-    </ul>
-</nav>
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
 
+        <!-- Intro -->
+        <div id="intro">
+            <h1>EXACT RAIL<br />SERVICES</h1>
+            <p>Providing superior Hi-Rail operators, rail-related apps, web development, and machinery hire services.</p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
 
-				<!-- Main -->
-					<div id="main">
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">
+                <img src="LOGO.jpg" alt="Exact Rail Services Logo" class="logo-image" />
+                Exact Rail Services
+            </a>
+        </header>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">September 7, 2024</span>
-									<h2><a href="#">Welcome to<br />
-									Exact Rail Services</a></h2>
-									<p>At Exact Rail Services, we specialize in providing elite Hi-Rail operators, developing innovative rail-related apps, and offering web development services. We also provide minor machinery hire to ensure our clients have access to the best equipment.</p>
-								</header>
-								<!-- Updated the image source to 'turnout.JPG' -->
-								<a href="#" class="image main">
-    <div style="display: flex; justify-content: center;">
-        <img src="images/turnout.JPG" alt="Turnout Image" style="width: 60%; height: auto; max-width: 600px;" />
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourservices.html">Our Services</a></li>
+                <li><a href="railapp.html">RailApp</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <span class="date">September 7, 2024</span>
+                    <h2><a href="#">Welcome to<br />Exact Rail Services</a></h2>
+                    <p>At Exact Rail Services, we specialize in providing elite Hi-Rail operators, developing innovative rail-related apps, and offering web development services. We also provide minor machinery hire to ensure our clients have access to the best equipment.</p>
+                </header>
+                <a href="#" class="image main">
+                    <div style="display: flex; justify-content: center;">
+                        <img src="images/turnout.JPG" alt="Turnout Image" style="width: 60%; height: auto; max-width: 600px;" />
+                    </div>
+                </a>
+                <ul class="actions special">
+                    <li><a href="#" class="button large">Learn More</a></li>
+                </ul>
+            </article>
+
+            <!-- New Images Section -->
+            <div class="side-by-side-images">
+                <img src="images/bridge.jpg" alt="Bridge Work">
+                <img src="images/cutting.jpg" alt="Cutting Work">
+            </div>
+
+            <!-- Posts -->
+            <section class="posts">
+                <article>
+                    <header>
+                        <span class="date">September 5, 2024</span>
+                        <h2><a href="#">Hi-Rail Operators<br />Elite and Experienced</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+                    <p>Our Hi-Rail operators are among the most experienced in the industry, ensuring safe and efficient operations in all conditions.</p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button">Full Story</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <header>
+                        <span class="date">September 1, 2024</span>
+                        <h2><a href="#">RailApp<br />Innovative Rail Solutions</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+                    <p>RailApp is our cutting-edge app developed specifically for rail industry professionals, offering features for tracking, safety, and project management.</p>
+                    <ul class="actions special">
+                        <li><a href="railapp.html" class="button">Explore RailApp</a></li>
+                    </ul>
+                </article>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" /></li>
+                    </ul>
+                </form>
+            </section>
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Address</h3>
+                    <p>Exact Rail Services Pty Ltd<br />3 Netherton Way, Aveley, 6069</p>
+                </section>
+                <section>
+                    <h3>Phone</h3>
+                    <p><a href="#">0412 114 162</a></p>
+                </section>
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@exactrail.com.au">info@exactrail.com.au</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul><li>&copy; 2024 Exact Rail Services Pty Ltd</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+        </div>
+
     </div>
-</a>
 
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-								<ul class="actions special">
-									<li><a href="#" class="button large">Learn More</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">September 5, 2024</span>
-										<h2><a href="#">Hi-Rail Operators<br />
-										Elite and Experienced</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Our Hi-Rail operators are among the most experienced in the industry, ensuring safe and efficient operations in all conditions.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">September 1, 2024</span>
-										<h2><a href="#">RailApp<br />
-										Innovative Rail Solutions</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>RailApp is our cutting-edge app developed specifically for rail industry professionals, offering features for tracking, safety, and project management.</p>
-									<ul class="actions special">
-										<li><a href="railapp.html" class="button">Explore RailApp</a></li>
-									</ul>
-								</article>
-								
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Exact Rail Services Pty Ltd<br />
-								3 Netherton Way, Aveley, 6069</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">0412 114 162</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:info@exactrail.com.au">info@exactrail.com.au</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; 2024 Exact Rail Services Pty Ltd</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
