@@ -11,14 +11,14 @@
         .image-gallery {
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Ensures the images are level */
+            align-items: center; /* Ensures the images are aligned in the middle */
             gap: 20px;
             margin-top: 20px;
         }
 
         .image-gallery img {
-            width: 40%; /* Adjust the width to make the images smaller */
-            height: auto;
+            height: 500px; /* Force both images to have the same height */
+            width: auto; /* Maintain aspect ratio */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for styling */
         }
