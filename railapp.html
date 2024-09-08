@@ -16,15 +16,75 @@
         }
 
         .image-gallery img {
-            width: 45%; /* Adjust the width to make the images smaller */
+            width: 40%; /* Adjust the width to make the images smaller */
             height: auto;
-            border-radius: 8px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05); /* Slight zoom on hover for interactivity */
         }
 
         /* Style for smaller App Store button */
         .app-store-button img {
-            width: 190px; /* Adjust the size of the App Store badge */
+            width: 150px; /* Adjust the size of the App Store badge */
             height: auto;
+            margin-top: 10px;
+            transition: transform 0.2s;
+        }
+
+        .app-store-button img:hover {
+            transform: scale(1.1); /* Slight hover effect for App Store badge */
+        }
+
+        .app-store-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Style enhancements for text sections */
+        h2 {
+            font-size: 2.5em;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.8em;
+        }
+
+        ul {
+            font-size: 1.1em;
+            color: #555;
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Style for footer */
+        footer {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        footer h3 {
+            color: #333;
+        }
+
+        footer p {
+            color: #666;
+        }
+
+        footer ul.icons li {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -62,8 +122,7 @@
             <!-- RailApp Information -->
             <section class="post">
                 <header class="major">
-                    <h2>RailApp<br />
-                        Assisting Rail Maintenance & Construction</h2>
+                    <h2>RailApp<br />Assisting Rail Maintenance & Construction</h2>
                     <p>RailApp is designed to assist professionals in the rail industry with a variety of tasks, including:</p>
                     <ul>
                         <li>Calculation of materials for projects</li>
