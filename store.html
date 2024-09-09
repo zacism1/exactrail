@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Store</h1>
+    <div id="products" class="product"></div>
+
+    <script>
+        // Your Printful API Key
+        const API_KEY = 'chKHlPs090lhZQQSF1oBQ1nUEEOgnBNR1oMkOuKL';
+
+        // Function to fetch products
+        async function fetchProducts() {
+            try {
+                const response = await fetch('https://api.printful.com/store/products', {
+                    headers: {
+                        'Authorization': 'Bearer ' + API_KEY
+                    }
+                });
+                const data = await response.json();
+                displayProducts(data.result);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        }
+
+        // Function to display products
+        function displayProducts(products) {
+            const productContainer = document.getElementById('products');
+            products.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.classList.add('product-item');
+                productDiv.innerHTML = `
+                    <img src="${product.thumbnail_url}" alt="${product.name}" width="150">
+                    <h2>${product.name}</h2>
+                    <p>$${product.retail_price}</p>
+                    <a href="https://YOUR_STORE.printful.com/product/${product.id}" target="_blank">Buy Now</a>
+                `;
+                productContainer.appendChild(productDiv);
+            });
+        }
+
+        // Fetch products on page load
+        fetchProducts();
+    </script>
+</body>
+</html>
