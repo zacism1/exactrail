@@ -35,10 +35,16 @@
             padding: 20px;
             background: rgba(0, 0, 0, 0.5); /* Add a slight dark overlay for better text readability */
             border-radius: 10px;
+            max-width: 800px; /* Limits the width of the entire content block */
+            margin: 0 auto; /* Centers the content block */
+            text-align: center;
         }
 
-        #intro h1, #intro p, #intro .actions {
-            margin: 0 0 20px 0;
+        #intro-content h1, #intro-content p {
+            white-space: normal; /* Prevents text from being forced into single words per line */
+            word-wrap: break-word; /* Ensures longer words break properly instead of overflowing */
+            max-width: 90%; /* Limits the width of the content to ensure readability */
+            margin: 0 auto 20px auto; /* Centers the content and adds space below */
         }
 
         /* General page styling */
@@ -107,17 +113,17 @@
         <!-- Intro with background video -->
         <div id="intro">
             <video autoplay muted loop playsinline>
-                <source src="Untitled design-3.mp4" type="video/mp4">
+                <source src="railappvid.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div id="intro-content">
-    <h1>RailApp<br />Assisting Rail Maintenance & Construction</h1>
-    <p>Streamline your rail maintenance and construction operations with ease and precision.</p>
-    <ul class="actions">
-        <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Learn More</a></li>
-    </ul>
-</div>
-
+                <h1>RailApp<br />Assisting Rail Maintenance & Construction</h1>
+                <p>Streamline your rail maintenance and construction operations with ease and precision.</p>
+                <ul class="actions">
+                    <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Learn More</a></li>
+                </ul>
+            </div>
+        </div>
 
         <!-- Header -->
         <header id="header">
