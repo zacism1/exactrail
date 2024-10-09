@@ -5,80 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-        /* Custom styling for Swiper */
-        .swiper-container {
-            width: 100%;
-            max-width: 800px;
-            margin: 20px auto;
-            padding-bottom: 40px;
-        }
-
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-        }
-
-        .swiper-slide img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s;
-        }
-
-        .swiper-slide img:hover {
-            transform: scale(1.05); /* Slight zoom on hover for interactivity */
-        }
-
-        /* Style for smaller App Store button */
-        .app-store-button img {
-            width: 150px; /* Adjust the size of the App Store badge */
-            height: auto;
-            margin-top: 10px;
-            transition: transform 0.2s;
-        }
-
-        .app-store-button img:hover {
-            transform: scale(1.1); /* Slight hover effect for App Store badge */
-        }
-
-        .app-store-section {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        /* Style enhancements for text sections */
-        h2 {
-            font-size: 2.5em;
-            color: #333;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2em;
-            color: #666;
-            line-height: 1.8em;
-            text-align: center;
-        }
-
-        ul {
-            font-size: 1.1em;
-            color: #555;
-            margin: 0 auto;
-            max-width: 600px;
-            list-style-type: disc;
-            text-align: left;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        /* Intro Video Styling */
+        /* Styling to ensure video fits the background */
         #intro {
             position: relative;
             height: 100vh;
@@ -108,55 +37,65 @@
             border-radius: 10px;
         }
 
-        /* Footer styling */
+        #intro h1, #intro p, #intro .actions {
+            margin: 0 0 20px 0;
+        }
+
+        /* General page styling */
+        .app-store-button img {
+            width: 150px; /* Adjust the size of the App Store badge */
+            height: auto;
+            margin-top: 10px;
+            transition: transform 0.2s;
+        }
+
+        .app-store-button img:hover {
+            transform: scale(1.1);
+        }
+
+        .app-store-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.8em;
+            text-align: center;
+        }
+
+        ul {
+            font-size: 1.1em;
+            color: #555;
+            margin: 0 auto;
+            max-width: 600px;
+            list-style-type: disc;
+            text-align: left;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
         footer {
             background-color: #f4f4f4;
             padding: 20px;
         }
 
-        footer h3 {
+        footer h3, footer p {
             color: #333;
-        }
-
-        footer p {
-            color: #666;
         }
 
         footer ul.icons li {
             margin-right: 10px;
-        }
-
-        /* Media Queries for mobile responsiveness */
-        @media screen and (max-width: 768px) {
-            h2 {
-                font-size: 1.8em;
-            }
-
-            .app-store-button img {
-                width: 120px; /* Smaller button for mobile */
-            }
-
-            p {
-                font-size: 1em;
-            }
-
-            ul {
-                font-size: 1em;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            h2 {
-                font-size: 1.5em;
-            }
-
-            p {
-                font-size: 0.9em;
-            }
-
-            ul {
-                font-size: 0.9em;
-            }
         }
     </style>
 </head>
@@ -198,20 +137,17 @@
             <ul class="icons">
                 <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
                 <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram"></span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
                 <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
             </ul>
         </nav>
 
         <!-- Main -->
         <div id="main">
-            <!-- RailApp Information -->
             <section class="post">
                 <header class="major">
                     <h2>RailApp<br />Assisting Rail Maintenance & Construction</h2>
-                    <p>
-                        RailApp is designed to assist professionals in the rail industry with a variety of tasks, including:
-                    </p>
+                    <p>RailApp is designed to assist professionals in the rail industry with a variety of tasks, including:</p>
                     <ul>
                         <li>Calculation of materials for projects</li>
                         <li>Scoping and inspections</li>
@@ -222,20 +158,6 @@
                     </ul>
                     <p>With RailApp, you can streamline your rail maintenance and construction operations with ease and precision.</p>
                 </header>
-
-                <!-- Swiper Gallery -->
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/IMG_1716.PNG" alt="RailApp Screenshot 1" class="image fit" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/IMG_1717.PNG" alt="RailApp Screenshot 2" class="image fit" />
-                        </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
 
                 <!-- App Store Button -->
                 <div class="app-store-section">
@@ -248,9 +170,7 @@
                 <!-- Privacy Policy link -->
                 <div class="app-store-section">
                     <h3>Privacy Policy</h3>
-                    <p>
-                        You can review the RailApp privacy policy <a href="https://zaclea88.wixsite.com/rapp" target="_blank">here</a>.
-                    </p>
+                    <p>You can review the RailApp privacy policy <a href="https://zaclea88.wixsite.com/rapp" target="_blank">here</a>.</p>
                 </div>
             </section>
         </div>
@@ -275,17 +195,10 @@
                     <ul class="icons alt">
                         <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
                         <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                        <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram"></span></a></li>
-                        <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub"></span></a></li>
+                        <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
                     </ul>
                 </section>
-            </section>
-
-            <!-- Merch Store Button -->
-            <section class="merch-store">
-                <ul class="actions">
-                    <li><a href="store.html" class="button large">Visit Our Merch Store</a></li>
-                </ul>
             </section>
         </footer>
 
@@ -297,22 +210,12 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                }
-            }
-        });
-    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
