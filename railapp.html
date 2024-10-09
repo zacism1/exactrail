@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
         /* Styling to ensure video fits the background */
@@ -33,23 +34,46 @@
             position: relative;
             z-index: 2;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.5); /* Add a slight dark overlay for better text readability */
+            background: rgba(0, 0, 0, 0.5);
             border-radius: 10px;
-            max-width: 800px; /* Limits the width of the entire content block */
-            margin: 0 auto; /* Centers the content block */
+            max-width: 800px;
+            margin: 0 auto;
             text-align: center;
         }
 
         #intro-content h1, #intro-content p {
-            white-space: normal; /* Prevents text from being forced into single words per line */
-            word-wrap: break-word; /* Ensures longer words break properly instead of overflowing */
-            max-width: 90%; /* Limits the width of the content to ensure readability */
-            margin: 0 auto 20px auto; /* Centers the content and adds space below */
+            white-space: normal;
+            word-wrap: break-word;
+            max-width: 90%;
+            margin: 0 auto 20px auto;
         }
 
-        /* General page styling */
+        /* Swiper styling */
+        .swiper-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .swiper-slide img:hover {
+            transform: scale(1.05);
+        }
+
         .app-store-button img {
-            width: 150px; /* Adjust the size of the App Store badge */
+            width: 150px;
             height: auto;
             margin-top: 10px;
             transition: transform 0.2s;
@@ -150,6 +174,21 @@
 
         <!-- Main -->
         <div id="main">
+            <!-- Swiper Gallery for Screenshots -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/IMG_1716.PNG" alt="RailApp Screenshot 1" class="image fit" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/IMG_1717.PNG" alt="RailApp Screenshot 2" class="image fit" />
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- RailApp Information -->
             <section class="post">
                 <header class="major">
                     <h2>RailApp<br />Assisting Rail Maintenance & Construction</h2>
@@ -216,6 +255,23 @@
     </div>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                }
+            }
+        });
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
