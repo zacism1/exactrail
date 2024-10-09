@@ -41,11 +41,40 @@
             text-align: center;
         }
 
+        #intro-content h1 {
+            font-size: 2.5em; /* Default size for larger screens */
+        }
+
+        #intro-content p {
+            font-size: 1.2em; /* Default size for larger screens */
+        }
+
         #intro-content h1, #intro-content p {
             white-space: normal;
             word-wrap: break-word;
             max-width: 90%;
             margin: 0 auto 20px auto;
+        }
+
+        /* Media Queries for smaller screens */
+        @media screen and (max-width: 768px) {
+            #intro-content h1 {
+                font-size: 1.8em; /* Adjust the size for tablets and smaller devices */
+            }
+
+            #intro-content p {
+                font-size: 1em; /* Adjust paragraph size for better readability */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #intro-content h1 {
+                font-size: 1.5em; /* Smaller size for mobile phones */
+            }
+
+            #intro-content p {
+                font-size: 0.9em; /* Smaller paragraph size for mobile phones */
+            }
         }
 
         /* Swiper styling */
